@@ -2,7 +2,7 @@ import React from 'react'
 import Bridal from "../../../assets/Bridal4.jpg"
 
 
-function hero() {
+function Hero() {
     return (
         <div className='bg-gray-200 min-h-height flex justify-center items-center'>
             <div className='relative flex items-center justify-center w-full h-screen bg-[#d2d0bb]'>
@@ -30,4 +30,4 @@ function hero() {
     )
 }
 
-export default hero
+export default Hero

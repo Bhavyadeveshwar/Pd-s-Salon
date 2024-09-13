@@ -6,7 +6,7 @@ function Buy() {
         
         <div className="relative min-h-screen px-6" > <img src={Background} alt="" Background />
   <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center">
-    <div className="p-8 rounded-lg shadow-md mb-80">
+    <div className="p-8 rounded-lg shadow-md mb-96">
       <h1 className="text-3xl font-bold  ">
         Our Home Made Cosmetics
       </h1>

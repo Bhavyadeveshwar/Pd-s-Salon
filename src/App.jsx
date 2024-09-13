@@ -1,28 +1,25 @@
+import { Route, Router, Routes } from "react-router-dom";
+import "./App.css";
+import { lazy, Suspense } from "react";
+import Loader from "./components/Loader/Loader";
 
-import './App.css'
-import Navbar from './components/Navbar/Navbar'
-import Hero from './components/Home/Hero/Hero'
-import About from './components/Home/About/About'
-import Jack from './components/Home/Jack/Jack'
-import Mission from './components/Home/Mission/Mission'
-import Footer from './components/Footer/Footer'
-import Buy from './components/Home/Buy/Buy'
+const Shop = lazy(()=> import('./components/Shop/Shop'));
+const Home = lazy(()=> import('./components/Home'));
+const Catalogue= lazy(()=>import('./components/Catalogue/Catalogue'));
+
 function App() {
- 
-
   return (
     <>
-      <Navbar/>
-      <Hero/>
-      <About/>
-      <Jack/>
-      <Buy/>
-      <Mission/>
-      <Footer/>
+      <Suspense fallback={<Loader />}>
+      <Routes>
+        <Route path="/" element={<Home />}/>
+        <Route path="/Catalogue" element={<Catalogue/>}/> 
+        <Route path="/Shop" element={<Shop />} />
 
-      
+      </Routes>
+      </Suspense>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

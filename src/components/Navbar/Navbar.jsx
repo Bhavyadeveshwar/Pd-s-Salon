@@ -1,46 +1,125 @@
-import React from 'react'
-import CallIcon from "../../assets/call.png"
-
+import React, { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
+import callIcon from "../../assets/call.png";
+import { useNavigate } from "react-router-dom";
 function Navbar() {
-    return (
-        <div>
-            <nav className='bg-black py-4 px-8'  >
-                <div className='container mx-auto w-10/12 flex justify-between items-center' >
-                    <div className='text-white font-bold text-2xl'>
-                        PD's SALON
-                    </div>
+  const [isOpen, setIsOpen] = useState(false);
 
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
 
-                    <div className='flex space-x-8 text-[#d2d0ba]'>
-                        <ul className='flex space-x-8 text-sm  ' >
-                            <li className='hover:text-white'>Home </li>
-                            <li className='hover:text-white'>Catologue </li>
-                            <li className='hover:text-white'>Shop </li>
-                            <li className='hover:text-white'>Contact </li>
-                        </ul>
-                    </div>
-                    <div className='flex items-center space-x-4 gap-16 '>
-                        <div className='flex justify-center items-center gap-2 text-right text-white text-sm '>
-                            <img  src= {CallIcon} alt="" className='w-8'/>
-                            <div>
-                                <div>
-                                    Info & Reservation
-                                </div>
-                                <div>
-                                    9873032124
-                                </div>
-                            </div>
+  const navigate = useNavigate();
 
-                        </div>
-                    </div>
-
-                </div>
-
-
-            </nav>
+  return (
+    <nav className="bg-black py-4 px-8">
+      <div className="container mx-auto flex justify-between items-center lg:w-9/12">
+        <div
+          onClick={() => navigate("/")}
+          className="text-2xl font-bold text-white cursor-pointer"
+        >
+          {" "}
+          PD's SALON
         </div>
-
-    )
+        <div className="hidden md:flex space-x-8 text-sm">
+          <ul className="flex space-x-8 text-sm">
+            <li>
+              <a
+                onClick={() => navigate("/")}
+                className="text-[#7fe5a3] hover:text-white cursor-pointer"
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                onClick={() => navigate("/Catalogue")}
+                className="text-[#7fe5a3] hover:text-white cursor-pointer"
+              >
+                Services
+              </a>
+            </li>
+            <li>
+              <a
+                onClick={() => navigate("/shop")}
+                className="text-[#7fe5a3] hover:text-white cursor-pointer"
+              >
+                Shop
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                className="text-[#7fe5a3] hover:text-white cursor-pointer"
+              >
+                About
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                className="text-[#7fe5a3] hover:text-white cursor-pointer"
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div className="hidden md:flex items-center space-x-4 gap-16">
+          <div className="flex justify-center items-center gap-2 text-right text-white text-sm">
+            <img className="w-8" src={callIcon} alt="call" />
+            <div>
+              <div>Info & reservations</div>
+              <div>1 - 111 - 344 - 678</div>
+            </div>
+          </div>
+        </div>
+        <div className="md:hidden flex items-center">
+          <button onClick={toggleMenu} className="text-white">
+            {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+          </button>
+        </div>
+      </div>
+      {isOpen && (
+        <div className="md:hidden bg-black py-4 px-8">
+          <ul className="space-y-4 text-sm">
+            <li>
+              <a href="#" className="text-[#7b9e87] hover:text-white  block">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#" className="text-[#7b9e87] hover:text-white block">
+                Services
+              </a>
+            </li>
+            <li>
+              <a href="#" className="text-[#7b9e87] hover:text-white block">
+                Shop
+              </a>
+            </li>
+            <li>
+              <a href="#" className="text-[#7b9e87] hover:text-white block">
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#" className="text-[#7b9e87] hover:text-white block">
+                Contact
+              </a>
+            </li>
+            <div className="flex items-center gap-2 text-right text-white text-sm">
+              <img className="w-8" src={callIcon} alt="call" />
+              <div>
+                <div>Info & reservations</div>
+                <div>1 - 111 - 344 - 678</div>
+              </div>
+            </div>
+          </ul>
+        </div>
+      )}
+    </nav>
+  );
 }
 
-export default Navbar
+export default Navbar;
