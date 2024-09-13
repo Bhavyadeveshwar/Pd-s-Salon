@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer"; // Ensure this path is correct
 
 const products = [
   {
     id: 1,
-    name: "Product 1",
+    name: "Shampoo",
     image: "https://via.placeholder.com/150",
     originalPrice: 100,
     discountedPrice: 80,
@@ -13,7 +14,7 @@ const products = [
   },
   {
     id: 2,
-    name: "Product 2",
+    name: "Conditioner",
     image: "https://via.placeholder.com/150",
     originalPrice: 120,
     discountedPrice: 90,
@@ -55,7 +56,7 @@ const Shop = () => {
 
   return (
     <>
-      <Navbar />
+      
       <div className="p-4 md:w-9/12 w-11/12 mx-auto">
         <h1 className="text-4xl md:text-4xl py-10 font-bold">Shop</h1>
         <div className="flex justify-between items-center mb-4">
@@ -98,9 +99,12 @@ const Shop = () => {
                 </button>
               </div>
             </div>
+            
           ))}
         </div>
+        
       </div>
+       {/* Footer added at the end */}
     </>
   );
 };
