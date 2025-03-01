@@ -15,10 +15,10 @@ function About() {
           Your Makeover Studio
         </p>
         <h2 className='text-center md:text-left text-3xl md:text-4xl font-bold mb-6 md:mb-10'>
-          Welcome to PD's Salon
+        Your Beauty, Our Passion
         </h2>
-        <p className='text-center md:text-left text-base md:text-lg'>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. In cupiditate deserunt esse tempore praesentium dolores reiciendis. Delectus nobis alias ea adipisci sunt fuga et tenetur voluptatem repellendus velit! Eaque, <br /> <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni non asperiores, odio vero alias rem in perferendis iure dicta veritatis eos provident ipsa aliquid corporis atque libero, incidunt obcaecati at?
+        <p className='text-center md:text-left text-base md:text-lg text-gray-900'>
+        At PD Salon, we believe beauty is more than just a style—it's an experience. Our expert stylists and skincare professionals bring artistry and precision to every service, ensuring you leave feeling refreshed, confident, and radiant. From trendsetting haircuts to rejuvenating facials, we offer a luxurious escape tailored just for you. <br /> <br /> Step into a world where self-care meets perfection. At PD Salon, we use premium products and the latest techniques to create looks that enhance your natural beauty.
         </p>
       </div>
     </div>

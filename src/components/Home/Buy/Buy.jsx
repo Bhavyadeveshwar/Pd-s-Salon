@@ -10,14 +10,14 @@ function Buy() {
       {/* Content Container */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center">
         <div className="bg-white p-6 md:p-8 rounded-lg shadow-md max-w-lg mx-auto">
-          <h1 className="text-2xl md:text-3xl font-bold mb-2 md:mb-4">
-            Our Homemade Cosmetics
+          <h1 className="text-xl md:text-3xl font-bold mb-2 md:mb-4">
+             Expert consulted Products
           </h1>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Organic & Vegan Skin Care
+            Best Hair Products
           </h2>
           <p className="text-gray-600 mb-4 md:mb-6 text-sm md:text-base">
-            Get 30% off your purchase with the VERA30 coupon code.
+            Get 10% off your purchase with the PDSALON30 coupon code.
           </p>
           <button
                 className="mt-4 w-full py-2 px-4 bg-green-700 text-white rounded"

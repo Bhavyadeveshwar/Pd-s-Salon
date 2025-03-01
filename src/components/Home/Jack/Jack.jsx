@@ -17,7 +17,7 @@ function Jack() {
 
                 </h1>
                 <p>
-                    <br />Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque odio soluta inventore voluptatibus quam maxime nihil quasi, eius id magni eligendi atque a quod eos dolore
+                    <br />At PD Salon, we redefine beauty with personalized makeovers that enhance your natural charm. <br /> Step in and let us craft a look that turns heads!
 
                 </p>
             </div>
@@ -33,8 +33,8 @@ function Jack() {
                     <br />Hair Styling
 
                 </h1>
-                <p>
-                    <br />Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi placeat eos voluptatibus facilis? Accusamus soluta eaque, temporibus nobis ab saepe ipsa? Qui eaque tenetur 
+                <p> <br /> Your hair is your crown, and at PD Salon, we style it to perfection.
+                    <br /> Experience precision cutting, expert coloring, and nourishing treatments that leave your hair healthy and full of life.
 
                 </p>
             </div>
@@ -50,8 +50,7 @@ function Jack() {
                     <br />Nail Art
                 </h1>
                 <p>
-                    <br />Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem dolorem voluptatum cumque maxime a nemo sed aliquid cum voluptates? Dolor, exercitationem ex 
-                </p>
+                    <br />Let your nails be a canvas of creativity with PD Salon’s exquisite nail art services. From minimalist elegance to intricate, eye-catching designs, we bring artistry and precision to every manicure.  </p>
 
             </div>
         </div>
