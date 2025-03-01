@@ -19,9 +19,17 @@ function Buy() {
           <p className="text-gray-600 mb-4 md:mb-6 text-sm md:text-base">
             Get 30% off your purchase with the VERA30 coupon code.
           </p>
-          <button className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
-            Shop Now
-          </button>
+          <button
+                className="mt-4 w-full py-2 px-4 bg-green-700 text-white rounded"
+                onClick={() => {
+                  // const phoneNumber = "918587871230"; // Replace with your business number
+                  const message = `Hello, I am interested in your beauty products. Can you provide more details?`;
+                  const whatsappLink = `https://wa.me/918587871230?text=${encodeURIComponent(message)}`;
+                  window.open(whatsappLink, "_blank");
+                }}
+              >
+                Inquire Now!
+              </button>
         </div>
       </div>
     </div>
