@@ -41,22 +41,8 @@ function Navbar() {
                 Catalogue
               </a>
             </li>
-            <li>
-              <a
-                onClick={() => navigate("/shop")}
-                className="text-[#7fe5a3] hover:text-white cursor-pointer"
-              >
-                Shop
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="text-[#7fe5a3] hover:text-white cursor-pointer"
-              >
-                About
-              </a>
-            </li>
+            
+            
             <li>
               <a
                 onClick={() => navigate("/Contact")}
