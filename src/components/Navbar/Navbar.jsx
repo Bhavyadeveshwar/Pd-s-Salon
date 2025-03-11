@@ -19,7 +19,7 @@ function Navbar() {
           onClick={() => navigate("/")}
           className="text-2xl font-bold text-white cursor-pointer"
         >
-          PD's SALON
+          PD's Beauty SALON
         </div>
 
         {/* Desktop Menu */}
@@ -60,7 +60,7 @@ function Navbar() {
             <img className="w-8" src={callIcon} alt="call" />
             <div>
               <div>Info & reservations</div>
-              <div>1 - 111 - 344 - 678</div>
+              <div>91-8130616206</div>
             </div>
           </div>
         </div>
